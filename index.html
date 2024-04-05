@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pet Shop</title>
-    <link rel="stylesheet" href="petshop.css">
+    <link rel="stylesheet" href="index.css">
 </head>
 <body>
     <header>
@@ -16,63 +16,114 @@
             <button type="submit">Buscar</button>
         </form>
         <nav>
-            <ul>
+            <div class="meno">
                 <li><a href="Petshop.html">Home</a></li>
                 <li><a href="sobre.html">Sobre</a></li>
                 <li><a href="servicos.html">Serviços</a></li>
                 <li><a href="produtos.html">Produtos</a></li>
                 <li><a href="contato.html">Contato</a></li>
-            </ul>
+           </div>
         </nav>
-        
     </header>
     <main>
-   <section>
-            <div class="container">
-                <img src="Home_Desk_1900x390_AgendamentoSeres.jpg" alt="Imagem 1">
-                <img src="Banner_desk_mes-do-consumidor_1900x390_1.jpg" alt="Imagem 2">
+        <div class="slideshow-container">
+            <div class="slide fade">
+              <img src="https://cms.cobasi.com.br/uploads/20240401_areias_1152x310_97f7331a0e.webp" style="width:100%">
             </div>
-        <h1>Bem-vindo ao nosso Pet Shop!</h1>
- 
-        <div class="container">
-            <div class="card">
-                <img src="7465465708_1.webp" alt="Imagem 1">
+            <div class="slide fade">
+              <img src="https://cms.cobasi.com.br/uploads/20240121_amigocobasi150_1152_X310_24638d180f.gif" style="width:100%">
             </div>
-            <div class="card">
-                <img src="7465465708_1.webp" alt="Imagem 2">
+            <div class="slide fade">
+              <img src="https://cms.cobasi.com.br/uploads/20240401_meudesconto_1152x310_e5aab04d7d.gif" style="width:100%">
             </div>
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>  
         </div>
-  <section>
-    <section>
+         
+          <br>
+          
+          <script>
+var slideIndex = 0;
+showSlides();
 
-            <div class="card1">
-               
-</section>
-    <ul class="store_list">
-        <li data-title="Football" data-image="assets\footBall.webp"> 
-            <img src="7465465708_1.webp" alt="Football" width="125">
-            <p>briquedo</p>
-        </li>
-        <li data-title="Basketball" data-image="assets\basketBall.png"> 
-            <img src="7465465708_1.webp" alt="Basketball" width="125">
-            <p>brinquedo</p>
-        </li>
-        <li data-title="Baseball" data-image="assets\baseBall.jpg"> 
-            <img src="180_dog_chow_sache_carne_racas_pequenas_100_g_27039_1_20230502120921.webp" alt="Baseball" width="125">
-            <p>brinquedo</p>
-        </li>
-        <li data-title="Tennisball" data-image="assets\tenisBall.webp"> 
-            <img src="7465465708_1.webp" alt="Tennis" width="125">
-            <p>briquedo</p>
-        </li>
-    </ul>
- </section>
- <div> <h1>Alimentos para os animais</h1>
- <h2></h2>
- <h1> elo </h1>
- <div>
- <footer>
-<h2> NOSSO Serviços SAO PARA TODOS ANIMAIS</h2></footer>
-<main>
+function showSlides() {
+  var slides = document.getElementsByClassName("slide");
+  for (var i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  slides[slideIndex-1].style.display = "block";  
+  setTimeout(showSlides, 20000); // Muda a imagem a cada 2 segundos
+}
+          </script>
+   </nav>
+</main>
+
+<footer>
+    <div class="card-container">
+        <div class="card">
+          <img src="https://petshopamarosbichos.fbitsstatic.net/img/b/8c9b8e9c-4f04-4fc9-8eed-a896bf711c78.png" alt="Imagem do produto">
+        </div>
+        
+        <div class="card">
+          <img src="https://petshopamarosbichos.fbitsstatic.net/img/b/fd2b82ed-d21e-42d4-9f95-96896e81bbc3.png" alt="Imagem do produto">
+        </div>
+        
+        <div class="card">
+          <img src="https://petshopamarosbichos.fbitsstatic.net/img/b/baeb51e0-7934-4a3e-a7d7-0b61f6f95665.png" alt="Imagem do produto">
+        </div>
+        
+        <div class="card">
+          <img src="https://petshopamarosbichos.fbitsstatic.net/img/b/478b6179-55e1-4732-973a-da4a46461ca8.png" alt="Imagem do produto">
+        </div>
+      </div>
+      
+</footer>
+<head>
+    <div class="farmacia">
+<h1>Qual tipo de produto você procura?</h1>
+  </div>
+</head>
+<head>
+      <div class="card-container">
+        <div class="card">
+          <img src="https://cobasi.vteximg.com.br/arquivos/ids/1022535-400-400/Frente.jpg?v=638122585118430000" alt="Imagem do produto">
+          <div class="card-body">
+            <h3>Nome do Produto 1</h3>
+            <p>Descrição do produto aqui.</p>
+            <button>Comprar</button>
+          </div>
+        </div>
+        
+        <div class="card">
+          <img src="https://cobasi.vteximg.com.br/arquivos/ids/1022535-400-400/Frente.jpg?v=638122585118430000" alt="Imagem do produto">
+          <div class="card-body">
+            <h3>Nome do Produto 2</h3>
+            <p>Descrição do produto aqui.</p>
+            <button>Comprar</button>
+          </div>
+        </div>
+        
+        <div class="card">
+          <img src="https://cobasi.vteximg.com.br/arquivos/ids/1022535-400-400/Frente.jpg?v=638122585118430000" alt="Imagem do produto">
+          <div class="card-body">
+            <h3>Nome do Produto 3</h3>
+            <p>Descrição do produto aqui.</p>
+            <button>Comprar</button>
+          </div>
+        </div>
+        
+        <div class="card">
+          <img src="https://cobasi.vteximg.com.br/arquivos/ids/1022535-400-400/Frente.jpg?v=638122585118430000" alt="Imagem do produto">
+          <div class="card-body">
+            <h3>Nome do Produto 4</h3>
+            <p>Descrição do produto aqui.</p>
+            <button>Comprar</button>
+          </div>
+      </div>
+      
+    </div>
+</head>
 </body>
 </html>
