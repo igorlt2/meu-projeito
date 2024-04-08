@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Carrinho de Compras</title>
     <style>
-        /* Estilos para o corpo da página */
+     
         body {
             font-family: Arial, sans-serif;
             margin: 0;
@@ -28,14 +28,13 @@
             box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
         }
 
-        /* Estilos para os itens do carrinho */
+      
         .item {
             margin-bottom: 10px;
             border-bottom: 1px solid #ddd;
             padding-bottom: 10px;
         }
 
-        /* Estilos para o total */
         #total {
             text-align: right;
             font-weight: bold;
@@ -43,7 +42,6 @@
             margin-top: 20px;
         }
 
-        /* Estilos para os botões */
         button {
             background-color: #4CAF50;
             color: white;
@@ -68,21 +66,21 @@
     <h1>Carrinho de Compras</h1>
     
     <div id="carrinho">
-        <!-- Aqui serão listados os produtos adicionados ao carrinho -->
+        
     </div>
     
     <h2>Total:</h2>
     <p id="total">R$ 0,00</p>
     
     <script>
-        // Dados dos produtos (nome e preço)
+       
         const produtos = [
             { nome: "Produto 1", preco: 50 },
             { nome: "Produto 2", preco: 30 },
             { nome: "Produto 3", preco: 20 }
         ];
 
-        // Função para exibir os produtos no carrinho
+        
         function exibirProdutos() {
             const carrinho = document.getElementById('carrinho');
             carrinho.innerHTML = '';
@@ -100,7 +98,6 @@
             totalElement.textContent = `Total: R$ ${total.toFixed(2)}`;
         }
 
-        // Chamar a função para exibir os produtos quando a página carregar
         window.onload = exibirProdutos;
     </script>
 </body>
