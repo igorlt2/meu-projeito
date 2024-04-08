@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pet Shop</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="Petshop.html"><img src="logo-o-bicho.png" alt="Logo do Pet Shop"></a>
+        </div>
+        <form action="/search" method="GET">
+            <input type="text" name="q" placeholder="Pesquisar...">
+            <button type="submit">Buscar</button>
+        </form>
+       <header>
+        <div class="carrinho">
+          <li><a href="celular.html"><img src="https://cdn-icons-png.flaticon.com/128/126/126341.png" alt=""></a></li>
+          <li><a href="carrinho.html"><img src="https://cdn-icons-png.flaticon.com/128/8385/8385873.png" alt=""></a></li>
+      </div>
+       </header>
+    </header>
+    <main>
+      <nav>
+        <div class="meno">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="sobre.html">Sobre</a></li>
+            <li><a href="servicos.html">Serviços</a></li>
+            <li><a href="produtos.html">Produtos</a></li>
+            <li><a href="contato.html">Contato</a></li>
+       </div>
+    </nav>
+        <div class="slideshow-container">
+            <div class="slide fade">
+              <img src="https://cms.cobasi.com.br/uploads/20240401_areias_1152x310_97f7331a0e.webp" style="width:100%">
+            </div>
+            <div class="slide fade">
+              <img src="https://cms.cobasi.com.br/uploads/20240121_amigocobasi150_1152_X310_24638d180f.gif" style="width:100%">
+            </div>
+            <div class="slide fade">
+              <img src="https://cms.cobasi.com.br/uploads/20240401_meudesconto_1152x310_e5aab04d7d.gif" style="width:100%">
+            </div>
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>  
+        </div>
+         
+          <br>
+          
+          <script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  var slides = document.getElementsByClassName("slide");
+  for (var i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  slides[slideIndex-1].style.display = "block";  
+  setTimeout(showSlides, 20000); 
+}
+          </script>
+   </nav>
+</main>
+
+<footer>
+    <div class="card-container">
+        <div class="card">
+          <img src="https://petshopamarosbichos.fbitsstatic.net/img/b/8c9b8e9c-4f04-4fc9-8eed-a896bf711c78.png" alt="Imagem do produto">
+        </div>
+        
+        <div class="card">
+          <img src="https://petshopamarosbichos.fbitsstatic.net/img/b/fd2b82ed-d21e-42d4-9f95-96896e81bbc3.png" alt="Imagem do produto">
+        </div>
+        
+        <div class="card">
+          <img src="https://petshopamarosbichos.fbitsstatic.net/img/b/baeb51e0-7934-4a3e-a7d7-0b61f6f95665.png" alt="Imagem do produto">
+        </div>
+        
+        <div class="card">
+          <img src="https://petshopamarosbichos.fbitsstatic.net/img/b/478b6179-55e1-4732-973a-da4a46461ca8.png" alt="Imagem do produto">
+        </div>
+      </div>
+      
+</footer>
+<head>
+    <div class="farmacia">
+<h1>Qual tipo de produto você o procura?</h1>
+  </div>
+</head>
+<head>
+      <div class="card-container">
+        <div class="card">
+          <img src="https://cobasi.vteximg.com.br/arquivos/ids/1022535-400-400/Frente.jpg?v=638122585118430000" alt="Imagem do produto">
+          <div class="card-body">
+            <h3>Nome do Produto 1</h3>
+            <p>Descrição do produto aqui.</p>
+            <button>Comprar</button>
+          </div>
+        </div>
+        
+        <div class="card">
+          <img src="https://cobasi.vteximg.com.br/arquivos/ids/1022535-400-400/Frente.jpg?v=638122585118430000" alt="Imagem do produto">
+          <div class="card-body">
+            <h3>Nome do Produto 2</h3>
+            <p>Descrição do produto aqui.</p>
+            <button>Comprar</button>
+          </div>
+        </div>
+        
+        <div class="card">
+          <img src="https://cobasi.vteximg.com.br/arquivos/ids/1022535-400-400/Frente.jpg?v=638122585118430000" alt="Imagem do produto">
+          <div class="card-body">
+            <h3>Nome do Produto 3</h3>
+            <p>Descrição do produto aqui.</p>
+            <button>Comprar</button>
+          </div>
+        </div>
+        
+        <div class="card">
+          <img src="https://cobasi.vteximg.com.br/arquivos/ids/1022535-400-400/Frente.jpg?v=638122585118430000" alt="Imagem do produto">
+          <div class="card-body">
+            <h3>Nome do Produto 4</h3>
+            <p>Descrição do produto aqui.</p>
+            <button>Comprar</button>
+          </div>
+      </div>
+      
+    </div>
+</head>
+
+</body>
+
+</html>
